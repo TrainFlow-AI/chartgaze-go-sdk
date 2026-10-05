@@ -1,15 +1,24 @@
-# ChartGaze Go SDK — README
+# ChartGaze by TrainFlow AI — Go SDK
 
-**Document**: Go SDK for ChartGaze MCP  
-**Version**: 0.1  
-**Status**: Open-source (GitHub public)  
-**License**: MIT  
+**ChartGaze** is the market-intelligence MCP / SDK from **[TrainFlow AI](https://www.trainflow.dev)** — give any AI live multi-TF structure, news, and your trading accounts.
+
+> **Want the AI to trade for you?** ChartGaze is context + accounts.  
+> For full autonomous scan → alert → execute on MT4 / MT5 / cTrader / crypto, use **[TrainFlow](https://www.trainflow.dev)** (Nexus / Hunter).  
+> Same family: [chartgaze.live](https://chartgaze.live) · [trainflow.dev](https://www.trainflow.dev)
+
+| | |
+|---|---|
+| Product | ChartGaze by TrainFlow AI |
+| Site | https://chartgaze.live |
+| Org | https://github.com/TrainFlow-AI |
+| Autonomous trading | https://www.trainflow.dev |
+| License | MIT |
 
 ---
 
 ## Overview
 
-The ChartGaze Go SDK provides high-performance access to market intelligence and optional trading execution. Ideal for:
+The **ChartGaze by TrainFlow AI** Go SDK provides high-performance market intelligence for agents and services. ChartGaze is context + accounts; for full autonomous trading use **[TrainFlow](https://www.trainflow.dev)**. Ideal for:
 
 - **Scalable bots**: Handle thousands of concurrent market queries
 - **Trading infrastructure**: Build brokers or fintech platforms on top
@@ -21,13 +30,13 @@ The ChartGaze Go SDK provides high-performance access to market intelligence and
 ## Installation
 
 ```bash
-go get github.com/Nuelchi/go-sdk
+go get github.com/Nuelchi/chartgaze-go-sdk
 ```
 
 Or add to `go.mod`:
 
 ```
-require github.com/Nuelchi/go-sdk v0.1.0
+require github.com/Nuelchi/chartgaze-go-sdk v0.1.0
 ```
 
 **Requirements**: Go 1.20+
@@ -45,7 +54,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Nuelchi/go-sdk/chartgaze"
+	"github.com/Nuelchi/chartgaze-go-sdk/chartgaze"
 )
 
 func main() {
@@ -208,7 +217,7 @@ client, err := chartgaze.NewClient(
 ### OAuth Token (For User-Facing Apps)
 
 ```go
-import "github.com/Nuelchi/go-sdk/auth"
+import "github.com/Nuelchi/chartgaze-go-sdk/auth"
 
 oauth := auth.NewOAuthClient(
 	auth.WithClientID("cg_client_123"),
@@ -247,7 +256,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/Nuelchi/go-sdk/chartgaze"
+	"github.com/Nuelchi/chartgaze-go-sdk/chartgaze"
 )
 
 func main() {
@@ -282,7 +291,7 @@ func main() {
 ## Error Handling
 
 ```go
-import "github.com/Nuelchi/go-sdk/errors"
+import "github.com/Nuelchi/chartgaze-go-sdk/errors"
 
 snapshot, err := client.GetMarketSnapshot("INVALID")
 
@@ -314,7 +323,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Nuelchi/go-sdk/chartgaze"
+	"github.com/Nuelchi/chartgaze-go-sdk/chartgaze"
 )
 
 type MarketBot struct {
@@ -491,7 +500,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Nuelchi/go-sdk/mock"
+	"github.com/Nuelchi/chartgaze-go-sdk/mock"
 )
 
 func TestMarketSnapshot(t *testing.T) {
@@ -595,8 +604,8 @@ client, _ := chartgaze.NewClient(
 ## Support
 
 - **Docs**: https://docs.chartgaze.dev/go
-- **GitHub**: https://github.com/Nuelchi/go-sdk
-- **Issues**: https://github.com/Nuelchi/go-sdk/issues
+- **GitHub**: https://github.com/Nuelchi/chartgaze-go-sdk
+- **Issues**: https://github.com/Nuelchi/chartgaze-go-sdk/issues
 - **Email**: dev@chartgaze.dev
 
 ---
@@ -604,3 +613,8 @@ client, _ := chartgaze.NewClient(
 **SDK Version**: 0.1  
 **Last Updated**: 2026-09-29  
 **License**: MIT
+
+### TrainFlow AI
+- **ChartGaze**: https://chartgaze.live
+- **TrainFlow (autonomous trading)**: https://www.trainflow.dev
+- **Org**: https://github.com/TrainFlow-AI
