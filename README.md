@@ -30,13 +30,13 @@ The **ChartGaze by TrainFlow AI** Go SDK provides high-performance market intell
 ## Installation
 
 ```bash
-go get github.com/Nuelchi/chartgaze-go-sdk
+go get github.com/TrainFlow-AI/chartgaze-go-sdk
 ```
 
 Or add to `go.mod`:
 
 ```
-require github.com/Nuelchi/chartgaze-go-sdk v0.1.0
+require github.com/TrainFlow-AI/chartgaze-go-sdk v0.1.0
 ```
 
 **Requirements**: Go 1.20+
@@ -54,7 +54,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Nuelchi/chartgaze-go-sdk/chartgaze"
+	"github.com/TrainFlow-AI/chartgaze-go-sdk/chartgaze"
 )
 
 func main() {
@@ -217,7 +217,7 @@ client, err := chartgaze.NewClient(
 ### OAuth Token (For User-Facing Apps)
 
 ```go
-import "github.com/Nuelchi/chartgaze-go-sdk/auth"
+import "github.com/TrainFlow-AI/chartgaze-go-sdk/auth"
 
 oauth := auth.NewOAuthClient(
 	auth.WithClientID("cg_client_123"),
@@ -256,7 +256,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/Nuelchi/chartgaze-go-sdk/chartgaze"
+	"github.com/TrainFlow-AI/chartgaze-go-sdk/chartgaze"
 )
 
 func main() {
@@ -291,7 +291,7 @@ func main() {
 ## Error Handling
 
 ```go
-import "github.com/Nuelchi/chartgaze-go-sdk/errors"
+import "github.com/TrainFlow-AI/chartgaze-go-sdk/errors"
 
 snapshot, err := client.GetMarketSnapshot("INVALID")
 
@@ -323,7 +323,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Nuelchi/chartgaze-go-sdk/chartgaze"
+	"github.com/TrainFlow-AI/chartgaze-go-sdk/chartgaze"
 )
 
 type MarketBot struct {
@@ -500,7 +500,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Nuelchi/chartgaze-go-sdk/mock"
+	"github.com/TrainFlow-AI/chartgaze-go-sdk/mock"
 )
 
 func TestMarketSnapshot(t *testing.T) {
@@ -568,7 +568,7 @@ snapshot, err := client.GetMarketSnapshot(ctx, "EURUSD")
 ChartGaze Go SDK is open-source:
 
 ```bash
-git clone https://github.com/Nuelchi/chartgaze-go-sdk.git
+git clone https://github.com/TrainFlow-AI/chartgaze-go-sdk.git
 cd go-sdk
 
 # Install dev deps
@@ -604,8 +604,8 @@ client, _ := chartgaze.NewClient(
 ## Support
 
 - **Docs**: https://docs.chartgaze.dev/go
-- **GitHub**: https://github.com/Nuelchi/chartgaze-go-sdk
-- **Issues**: https://github.com/Nuelchi/chartgaze-go-sdk/issues
+- **GitHub**: https://github.com/TrainFlow-AI/chartgaze-go-sdk
+- **Issues**: https://github.com/TrainFlow-AI/chartgaze-go-sdk/issues
 - **Email**: dev@chartgaze.dev
 
 ---
