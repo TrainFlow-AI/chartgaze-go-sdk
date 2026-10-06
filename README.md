@@ -9,10 +9,15 @@
 | | |
 |---|---|
 | Product | ChartGaze by TrainFlow AI |
-| Site | https://chartgaze.live |
+| Site | https://www.chartgaze.live |
+| Docs | https://www.chartgaze.live/docs |
+| MCP / API | https://api.chartgaze.live |
 | Org | https://github.com/TrainFlow-AI |
 | Autonomous trading | https://www.trainflow.dev |
 | License | MIT |
+
+**Live client:** `chartgaze.NewClient(WithAPIKey(...))` defaults to `https://api.chartgaze.live`.  
+Helpers: `GetMarketSnapshot`, `GetMarketContext`, `CompareMarkets`, `ProposeTrade` / `ExecuteTrade` (require `accountID`), `GetUsageSummary`, `ListAccounts`. Free = **10 calls**.
 
 ---
 
@@ -603,18 +608,19 @@ client, _ := chartgaze.NewClient(
 
 ## Support
 
-- **Docs**: https://docs.chartgaze.dev/go
+- **Docs**: https://www.chartgaze.live/docs
+- **Agents**: https://www.chartgaze.live/agents
 - **GitHub**: https://github.com/TrainFlow-AI/chartgaze-go-sdk
 - **Issues**: https://github.com/TrainFlow-AI/chartgaze-go-sdk/issues
-- **Email**: dev@chartgaze.dev
+- **Email**: support@chartgaze.live
 
 ---
 
-**SDK Version**: 0.1  
-**Last Updated**: 2026-09-29  
+**SDK Version**: 0.1.1  
+**Last Updated**: 2026-10-06  
 **License**: MIT
 
 ### TrainFlow AI
-- **ChartGaze**: https://chartgaze.live
+- **ChartGaze**: https://www.chartgaze.live
 - **TrainFlow (autonomous trading)**: https://www.trainflow.dev
 - **Org**: https://github.com/TrainFlow-AI
