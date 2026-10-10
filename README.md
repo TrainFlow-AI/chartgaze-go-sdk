@@ -11,7 +11,7 @@
 | Product | ChartGaze by TrainFlow AI |
 | Site | https://www.chartgaze.live |
 | Docs | https://www.chartgaze.live/docs |
-| MCP connector URL | https://api.chartgaze.live/mcp |
+| MCP connector URL | https://api.chartgaze.live/app |
 | API / SDK base | https://api.chartgaze.live |
 | Org | https://github.com/TrainFlow-AI |
 | Autonomous trading | https://www.trainflow.dev |
